@@ -1,0 +1,11 @@
+name = "이유덕,이재영,권종표,이재영,박민호,강상희,이재영,김지완,최승혁,이성연,박영서,박민호,전경헌,송정환,김재성,이유덕,전경헌".split(",")
+print(name)
+print()
+
+print('김씨:', len(list(filter(lambda x:x[0]=='김', name))))
+print('이씨:', len(list(filter(lambda x:x[0]=='이', name))))
+print('이재영:', len(list(filter(lambda x:x=='이재영', name))))
+names = list(set(name))
+print('중복을 제거한 이름:',names)
+names.sort()
+print('중복을 제거한 이름을 오름차순으로 정렬:',names)
